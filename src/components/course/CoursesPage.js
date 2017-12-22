@@ -6,13 +6,14 @@ class CoursesPage extends Component {
       this.state = {
           course: { title: null }
       };
+
   }
     onTitleChange(event) {
         const course = this.state.course;
         course.title = event.target.value;
         this.setState({course: course});
     }
-    
+
     render() {
       return (
         <div>
