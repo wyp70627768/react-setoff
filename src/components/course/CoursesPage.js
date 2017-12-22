@@ -16,6 +16,7 @@ class CoursesPage extends Component {
       return (
         <div>
           <h1>Courses</h1>
+          {this.props.courses.map(this.courseRow)}
         </div>
       );
     }
